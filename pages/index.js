@@ -63,6 +63,9 @@ export default function Home( {propertyForSale,propertyForRent}) {
     props:{
       propertyForSale:propertyForSale?.hits,
       propertyForRent:propertyForRent?.hits
-    }
+    },
+    revalidate: 10,  
+
+
   }
  }
